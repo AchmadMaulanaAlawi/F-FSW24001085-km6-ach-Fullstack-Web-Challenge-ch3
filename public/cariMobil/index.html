@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Cari Mobil</title>
+  </head>
+  <body>
+    <div class="bg-body-secondary overflow-hidden">
+      <nav class="navbar navbar-expand-md px-4">
+        <div class="container-xxl">
+          <a
+            class="navbar-brand"
+            href="#"
+            >Bootstrap</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#our-services"
+                  >Our Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#why-us"
+                  >Why Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#testimonial"
+                  >Testimonial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#faq"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main-content row pt-4 g-4">
+        <div
+          class="col-md-6 px-5 my-auto"
+          style="text-align: justify"
+        >
+          <h1 class="fw-bold">
+            Sewa & Rental Mobil Terbaik di kawasan Jakarta
+          </h1>
+          <p class="w-75">
+            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
+            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+            untuk sewa mobil selama 24 jam.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="../../assets/images/img_car.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="search-bar w-100 d-flex justify-content-center py-5">
+          <div
+            class="search-bar-body w-100 rounded-3 bg-light my-auto px-3 py-4 shadow"
+          >
+            <div
+              class="filter-elements m-auto row row-cols-lg-5 row-cols-1 gap-3 gap-lg-0"
+            >
+              <div
+                class="driver-type d-flex flex-column justify-content-center"
+              >
+                <div class="label">Tipe Driver</div>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-light text-start text-secondary border dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="driver-type-button-text"
+                  >
+                    Pilih Tipe Driver
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    id="dropdown-menu-driver"
+                  >
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="dengan-supir"
+                      >
+                        Dengan Sopir
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="tanpa-sopir"
+                      >
+                        Tanpa Sopir
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="date d-flex flex-column justify-content-center">
+                <div class="label">Tanggal</div>
+                <div class="input-group">
+                  <input
+                    id="date"
+                    min="2024-03-10"
+                    max="2024-03-15"
+                    type="date"
+                    placeholder="Pilih tanggal"
+                    class="form-control text-secondary"
+                  />
+                </div>
+              </div>
+              <div class="time d-flex flex-column justify-content-center">
+                <div class="label">Waktu jemput/ambil</div>
+                <div class="dropdown">
+                  <a
+                    class="btn text-start btn-light text-secondary dropdown-toggle border rounded-3 w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="time-button-text"
+                  >
+                    Pilih waktu
+                  </a>
+
+                  <ul
+                    class="dropdown-menu"
+                    id="dropdown-menu-time"
+                  >
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="dengan-supir"
+                      >
+                        08.00
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="tanpa-sopir"
+                      >
+                        09.00
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="tanpa-sopir"
+                      >
+                        10.00
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="tanpa-sopir"
+                      >
+                        11.00
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        id="tanpa-sopir"
+                      >
+                        12.00
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="total-passangers d-flex flex-column justify-content-center"
+              >
+                <div class="label">Jumlah penumpang</div>
+                <div class="input-group">
+                  <input
+                    id="capacity"
+                    min="1"
+                    type="number"
+                    class="form-control text-secondary"
+                    placeholder="Jumlah penumpang"
+                  />
+                </div>
+              </div>
+              <div
+                class="search-button d-flex flex-column justify-content-center"
+              >
+                <button
+                  id="search-button"
+                  type="button"
+                  class="btn btn-success"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pb-5">
+        <div
+          id="alerts-container"
+          class="w-100"
+        ></div>
+        <div
+          id="cards-container"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"
+        ></div>
+      </div>
+    </div>
+    <div
+      class="container"
+      id="our-services"
+    >
+      <footer class="d-flex gap-md-5 flex-column flex-md-row py-5">
+        <div class="address">
+          <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+          <p>binarcarrental@gmail.com</p>
+          <p>081-233-334-808</p>
+        </div>
+        <div class="address d-flex flex-column gap-3 gap-md-0 mb-3 mb-md-0">
+          <a
+            class="link-dark link-underline-opacity-25"
+            href="#our-services"
+            >Our Service</a
+          >
+          <a
+            class="link-dark link-underline-opacity-25"
+            href="#why-us"
+            >Why Us</a
+          >
+          <a
+            class="link-dark link-underline-opacity-25"
+            href="#testimonial"
+            >Testimonial</a
+          >
+          <a
+            class="link-dark link-underline-opacity-25"
+            href="#faq"
+            >FAQ</a
+          >
+        </div>
+        <div class="address">
+          <p>Connect with us</p>
+          <div class="social-medias d-flex gap-2">
+            <img
+              src="../../assets/icons/icon_facebook.png"
+              alt="facebook"
+            />
+            <img
+              src="../../assets/icons/icon_instagram.png"
+              alt="instagram"
+            />
+            <img
+              src="../../assets/icons/icon_twitter.png"
+              alt="twitter"
+            />
+            <img
+              src="../../assets/icons/icon_mail.png"
+              alt="mail"
+            />
+            <img
+              src="../../assets/icons/icon_twitch.png"
+              alt="twitch"
+            />
+          </div>
+        </div>
+        <div class="address mt-3 mt-md-0">
+          <p>Copyright Binar 2024</p>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="../../assets/js/index.js"
+    ></script>
+  </body>
+</html>
